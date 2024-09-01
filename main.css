@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "New Amsterdam", sans-serif; */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.continer
+{
+    width: 100%;
+    height: 900px;
+    background-image:linear-gradient(#2f45,#bdbdbd);
+}
+header
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.header-continer
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+.header-continer1:hover
+{
+  font-size: 35px;
+  text-shadow: -4px 3px 0 white;
+  transform: (360deg);
+ 
+}
+
+.header-continer1
+{
+    font-size: 30px;
+    font-weight: bold;
+    transition: 4s;
+    font-family: "New Amsterdam", sans-serif;
+}
+.header-continer2 ul
+{
+    list-style-type: none;
+    display: flex;
+}
+.header-continer2 ul a
+{
+    text-decoration: none;
+    display:block;
+    padding:10px ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.header-continer2 li::after
+{
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color:black;
+    margin: auto;
+    transition: .5s;
+}
+.header-continer2 li:hover::after
+{
+ width: 90%;
+ display: flex;
+ justify-content: center;
+ 
+ 
+    
+}
+.menu img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;margin-top: 20px;
+
+    display: none;
+}
+/* ==========mobile view================================= */
+
+
+
+/* ==============end mbile view=========================== */
+@media (max-width:600px)
+{
+    .header-continer
+    {
+        display: block;
+        height: 100px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .header-continer2 ul li {
+        margin: auto;
+
+    }
+    .header-continer2 ul a
+    {
+        font-size: 10px;
+        width: 100%;
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+       
+    } 
+    .header-continer1
+{
+width: 100%;
+height: 70px;
+display: flex;
+justify-content: center;
+}
+
+
+  /* .menu img
+    {
+        display:block;
+    } */
+
+}
+/* ================================================================== */
+.content-img
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.content-img img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+
+}
+.content-img a:hover.continer
+{
+    background-color: black;
+}
+.text
+{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text span
+{
+    color: red;
+}
+.text span::after
+{
+    content: "";
+    animation: jk 5s infinite;
+}
+@keyframes jk
+{
+    0%,25%  {
+        content: "web developrer";
+    }
+    26%, 50%{
+        content:"problem solver";
+    }
+    51% ,75%{
+        content:"hard worker";
+    }
+    76% , 100%{
+        content:"gamer";
+    }
+}
+/* ========================================================= */
+.social-icon 
+{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.social-icon a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    display:block;
+    border-radius: 20px;
+    letter-spacing: 20px;
+}
+/* ========================================================================= */

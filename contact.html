@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+      *
+      {
+        padding: 0;
+        margin: 0;
+        
+      }
+      .continer
+      {
+        background-image: linear-gradient(#fbcdbe,#fdbd,#fef0Ef);
+        font-family: "Sora", sans-serif;
+      }
+      h1
+      {
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+      }
+      form{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        margin: auto;
+        margin-top: 3%;
+        border-radius: 20px; 
+        width: 40%;
+        height: 550px;
+        color: black;
+        border: 5px solid black;
+        background-color: #e1d4c3;
+      }
+      input
+      {
+        height: 40px;
+        border-radius: 60px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      select
+      {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+      textarea
+      {
+        font-size: 15px;
+        width: 100%;
+        height:100px;
+      }
+      .btn1{
+        border-radius: 20px;
+        height: 65px;
+        font-weight: bold;
+        font-size: 20px;
+        border: 5px solid #e1d4c3;
+        cursor:progress;
+        background-color:#bac;
+      }
+      h3
+      {
+        font-size: 20px;
+      }
+      
+      .back
+      {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .btn {
+        width: 200px;
+        height: 40px;
+        border:none; 
+        border-radius: 20px;
+        background-color: #2f45;
+        
+      }
+      .btn a
+      {
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        color:black;
+        
+      }
+      @media (max-width:600px) {
+        form{
+          width: 80%;
+        }
+      }
+    </style>
+    
+</head>
+<body>
+   <div class="continer">
+    <h1>Contact</h1>
+    <form action="https://formspree.io/f/mkgwyanw" method="post">                                                                                                     
+      <h3> Name   :</h3>   <input type="text" placeholder="Enter name" required name="name">
+    <h3>   Email  :  </h3> <input type="email" placeholder="Enter email" required name="email">
+     <h3>  Place  : </h3>  <select name="district" >
+          <option>chennai</option>
+          <option>chengalpattu</option>
+          <option>Kancheepuram</option>
+          <option>Thiruvallur</option>
+          <option>Thanjavur</option>
+          <option>Thirunelveli</option>
+          <option>Trichy</option>
+          <option>Villupuram</option>
+          <option >Kanniyakumari</option>
+          <option >Tenkasi</option>
+          <option >Erode</option>
+          <option >Coimbathore</option>
+          <option >Dindigul</option>
+          <option >Thirunelveli</option>
+          <option >Madurai</option>
+          <option >Vellore</option>
+          <option >Tiruvannamalai</option>
+          <option >Kallakuruchi</option>
+                 </select>
+       <h3>  Detail  :   </h3>  <textarea placeholder="details" name="details"></textarea>
+        <button class="btn1" type="submit">submit</button>
+    </form>
+   <div class="back">
+    <button class="btn"><a href="index.html">GO BACK</a></button>
+   </div>
+   </div> 
+</body>
+</html>
